@@ -1,0 +1,90 @@
+@import "components/base";
+@import "components/background";
+@import "components/fonts";
+@import "components/header";
+@import "components/main-content-bg";
+@import "components/hero-card";
+@import "components/skills";
+@import "components/footer";
+
+.main {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 2660px;
+    height: 1716px;
+
+    display: block;
+    background: #eee;
+
+    border-radius: 30px;
+
+    box-shadow: 0 0 20px rgba($color: #ff4656, $alpha: 1);
+
+    &__background {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+
+        z-index: -1;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: rgba($color: #ff4656, $alpha: 1);
+        border-radius: 30px;
+
+        user-select: none;
+        pointer-events: none;
+    }
+
+    &__background-img {
+        width: 2660px;
+        height: 1499px;
+    }
+
+    &__header {
+        border-radius: 30px 30px 0 0;
+    }
+
+    &__content {
+        min-height: 2663px;
+        min-height: 1150px;
+
+        margin-top: 113px;
+        padding-left: 504px;
+    }
+
+    &__content-title {
+        position: absolute;
+
+        top: 450px;
+        left: -250px;
+
+        font-family: "Druk Wide";
+        font-size: 156px;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+
+        transform: rotate(90deg);
+    }
+
+    &__footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        z-index: -1;
+
+        border-radius: 0 0 30px 30px;
+    }
+}
